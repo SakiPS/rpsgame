@@ -1,0 +1,102 @@
+body {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 10px;
+    text-align: center;
+}
+
+img { height: 100px; }
+
+.button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: #F04848;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 20px auto;
+}
+
+.button:hover {
+    background-color: rgba(240, 72, 72, .4);
+    color: #F04848;
+    font-size: 1.7rem;
+}
+
+/******* header style *******/
+header {
+    background-color:#363673;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+}
+
+/******* style: before click "Shoot!" button *******/
+#askUserChoice h2 { 
+    font-size: 1.8rem;
+    margin: 2rem 0;
+}
+
+#result { display: none; }
+
+div#option { 
+    background-color: rgba(253, 189, 40, .3);
+    margin: 2rem auto 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 80%;
+}
+
+div#option p {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+/*** radio button style ***/
+div#option input { display: none; }
+div#option label {
+    background-color: white;
+    border: solid 1px #FDBD28;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 1rem;
+    width: 150px;
+}
+div#option input:checked + label { background-color: #FDBD28; }
+/*** end radio button style ***/
+
+button#userChoiceButton { width: 180px;}
+
+/******* style: after click "Shoot!" button *******/
+#result h2 {
+    font-size: 3rem;
+    margin: 2rem 0 1rem;
+}
+
+div.resultImage {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin: 3rem;
+}
+
+div.resultImageBox p { 
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+/******* media query *******/
+@media screen and (min-width:1000px) {
+    div#option { width: 60%; }
+}
+
+@media screen and (min-width:1000px) {
+    div#option { max-width: 800px; }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock, Paper, Scissor Game</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <header>
+        <h1>Rock, Paper, Scissor Game</h1>
+    </header>
+    <main>
+        <div id="askUserChoice">
+            <h2>Would you like rock, paper or scissors?</h2>
+            <div id="option">
+                <p>Choose one</p>
+                <input id = "radio1" type="radio" name="userChoice" value = "rock" checked>
+                <label for = "radio1">Rock</label>
+                <input id = "radio2" type="radio" name="userChoice" value = "paper">
+                <label for = "radio2">Paper</label>
+                <input id = "radio3" type="radio" name="userChoice" value = "scissors">
+                <label for = "radio3">Scissors</label>
+            </div>
+            <button type="button" id = "userChoiceButton" class="button">Shoot!</button>
+        </div>
+
+        <div id="result">
+            <h2 id="resultText"></h2>
+
+            <div class="resultImage">
+                <div class="resultImageBox">
+                    <p>You</p>
+                    <img id="userChoiceImage" src="images/rock.png" alt="rock">
+                </div>
+                <div class="resultImageBox">
+                    <p>Computer</p>
+                    <img id="comChoiceImage" src="images/rock.png" alt="rock">
+                </div>
+            </div>
+
+            <button type="button" id = "againButton" class="button">Play again</button>
+            
+        </div>
+    </main>
+
+    <script src="scripts/rspGame.js"></script>
+</body>
+</html>
